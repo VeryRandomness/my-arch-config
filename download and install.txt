@@ -25,3 +25,4 @@ sudo tailscale up
 
 chmod +x ~/dotfiles/.config/hypr/scripts/Weather.sh
 chmod +x ~/dotfiles/.config/hypr/startup.sh
+chmod +x ~/dotfiles/.config/hypr/wofi-random-prompt.sh
