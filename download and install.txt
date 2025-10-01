@@ -1,24 +1,21 @@
-Update system:
+# Update system:
 sudo pacman -Syu
 
-Install yay:
+# Install yay:
 sudo pacman -S --needed git basedevel
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ~
 
-Packages to install:
-sudo pacman -S waybar fastfetch obsidian swaync syncthing tailscale kitty nautilus wofi hyprpaper hypridle hyprshot btop spotify-launcher
-yay -S sublime-text-4 anydesk-bin brave-bin
+# Packages to install:
+sudo pacman -S --noconfirm waybar fastfetch obsidian swaync syncthing tailscale kitty nautilus wofi hyprpaper hypridle hyprshot btop spotify-launcher
+yay -S --noconfirm sublime-text-4 anydesk-bin brave-bin
 
-Fonts:
-sudo pacman -S otf-font-awesome
+# Fonts:
+sudo pacman -S --noconfirm otf-font-awesome
 
-Waybar:
-waybar &
-
-Tailscale stuff
+# Tailscale stuff
 sudo systemctl enable --now tailscaled
 sudo tailscale up
 sudo tailscale up
