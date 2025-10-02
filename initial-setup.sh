@@ -12,7 +12,8 @@ INSTALL_DIR="$HOME/Dotfiles"
 echo "--- STARTING AUTOMATED ARCH CONFIGURATION ---"
 
 # We must ensure 'git' and 'stow' are available before cloning and running the install script
-echo "Installing essential utilities: git and stow..."
+echo "Installing essential utilities: sudo and git and stow..."
+pacman -Syu --noconfirm sudo
 sudo pacman -S --needed git stow --noconfirm
 
 # Clone the repository
